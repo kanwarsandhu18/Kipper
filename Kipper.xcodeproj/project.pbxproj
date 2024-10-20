@@ -13,6 +13,7 @@
 		E8EA90902CBC4D8C00D49569 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA908F2CBC4D8C00D49569 /* ImmersiveView.swift */; };
 		E8EA90922CBC4D8D00D49569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EA90912CBC4D8D00D49569 /* Assets.xcassets */; };
 		E8EA90952CBC4D8D00D49569 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EA90942CBC4D8D00D49569 /* Preview Assets.xcassets */; };
+		E8EA909D2CBC538F00D49569 /* SpeechRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA909C2CBC538E00D49569 /* SpeechRec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E8EA90912CBC4D8D00D49569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8EA90942CBC4D8D00D49569 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8EA90962CBC4D8D00D49569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EA909C2CBC538E00D49569 /* SpeechRec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E8EA90912CBC4D8D00D49569 /* Assets.xcassets */,
 				E8EA90962CBC4D8D00D49569 /* Info.plist */,
 				E8EA90932CBC4D8D00D49569 /* Preview Content */,
+				E8EA909C2CBC538E00D49569 /* SpeechRec.swift */,
 			);
 			path = Kipper;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EA909D2CBC538F00D49569 /* SpeechRec.swift in Sources */,
 				E8EA908E2CBC4D8C00D49569 /* ContentView.swift in Sources */,
 				E8EA908C2CBC4D8C00D49569 /* KipperApp.swift in Sources */,
 				E8EA90902CBC4D8C00D49569 /* ImmersiveView.swift in Sources */,
@@ -290,12 +294,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kipper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Speech Access";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "MicroPhone Permission";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,12 +322,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kipper/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Speech Access";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "MicroPhone Permission";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
